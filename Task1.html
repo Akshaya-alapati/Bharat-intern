@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        body {
+            font-family: 'Asap', sans-serif;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+        a {
+            color: white;
+            text-decoration: solid;
+            border-color: aliceblue;
+        }
+        h1 {
+            color: black;
+        }
+        .container {
+            min-height: 500px;
+            max-width: 1024px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .header-container {
+            background-color: rgb(60, 60, 60);
+            min-height: 100px;
+            margin-bottom: 40px;
+        }
+        header {
+            max-width: 1024px;
+            color: aliceblue;
+            min-height: 100px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .col {
+            min-height: 200px;
+            width: 30%;
+            margin-bottom: 40px;
+            position: relative; /* Add this for circular clipping */
+        }
+        .col img {
+            max-width: 100%;
+            max-height: 100%;
+            border-radius: 50%; /* Apply circular clipping */
+            object-fit: cover; /* Ensure image covers entire circle */
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+        }
+        .col h1 {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px 20px;
+            border-radius: 20px;
+        }
+        .mybutton {
+            padding: 10px 25px;
+            border: 1px solid aliceblue;
+            margin: 0 10px;
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+        .bold {
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+    <div class="header-container">
+        <header>
+            <div class="logo"><span class="bold">AKSHAYA ALAPATI- DATA SCIENTIST</span></div>
+            <nav>
+                <a href="home.html" class="mybutton">HOME</a>
+                <a href="about.html" class="mybutton">ABOUTME</a>
+                <a href="contact.html" class="mybutton">CONTACT</a> 
+             </nav>
+        </header>
+    </div>
+
+    <div class="container">
+        <div class="col">
+            
+            <img src="soft-skills.webp" alt="">
+            <a href="skills.html"><h1>SKILLS</h1></a>
+            
+        </div>
+        <div class="col">
+            <img src="resume.jpg" alt="">
+            <a href="Akshaya Alapati.pdf"><h1>resume</h1></a>
+        </div>
+        <div class="col">
+            <img src="https://www.insidehighered.com/sites/default/files/styles/max_650x650/public/media/barber%20handshake.jpg?itok=9FJCpvcE" alt="">
+            <a href="projects.html"><h1>PROJECTS</h1></a>
+        </div>
+    </div>
+</body>
+</html>
